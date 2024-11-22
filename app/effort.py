@@ -745,7 +745,7 @@ def get_hands_data(config: Config) -> Hands:
 
 
 def create_permutations(
-    left: Hand, right: Hand, sequence_lengths: tuple[int, ...] = (1, 2, 3)
+    left: Hand, right: Hand, sequence_lengths: tuple[int, ...] = (1, 2)
 ) -> list[tuple[int, ...]]:
     """This creates permutations of given sequence lengths that can be typed with at
     least one of the hands. The returned list contains tuples of key indices."""

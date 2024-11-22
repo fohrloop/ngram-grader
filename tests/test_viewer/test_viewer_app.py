@@ -17,7 +17,7 @@ class TestKeySeqApp:
         N = 10  # from config (10 keys per side)
         app = NgramTableViewerApp("__some_nonexisting_file__", config=config)
         async with app.run_test():
-            assert len(app.permutations) == N**3 + N**2 + N
+            assert len(app.permutations) == N**2 + N
             # fmt: off
             assert app.permutations[:21] == [(0,), (1,), (2,), (3,), (4,), (5,), (6,), (7,), (8,), (9,), (0, 0), (0, 1), (0, 2), (0, 3), (0, 4), (0, 5), (0, 6), (0, 7), (0, 8), (0, 9), (1, 0)]
             # fmt: on

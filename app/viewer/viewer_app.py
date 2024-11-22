@@ -151,7 +151,7 @@ class NgramTableViewerApp(App):
         self.config = config
         self.hands = get_hands_data(self.config)
         self.permutations: list[tuple[int, ...]] = create_permutations(
-            self.hands.left, self.hands.right, sequence_lengths=(1, 2, 3)
+            self.hands.left, self.hands.right, sequence_lengths=(1, 2)
         )
         super().__init__()
         self.help_panel_visible: bool = False

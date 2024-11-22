@@ -231,7 +231,7 @@ class KeySequenceSortApp(App):
         self.config = config
         self.hands = get_hands_data(self.config)
         permutations = create_permutations(
-            self.hands.left, self.hands.right, sequence_lengths=(1, 2, 3)
+            self.hands.left, self.hands.right, sequence_lengths=(1, 2)
         )
         self.n_ngrams = len(permutations)
         self.main_area = MainArea(
